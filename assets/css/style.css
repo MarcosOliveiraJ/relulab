@@ -86,6 +86,7 @@ img {
 .hero-texto p { font-size: 18px; margin-bottom: 36px; max-width: 520px; }
 
 .secao { padding: 80px 64px; }
+.secao-alt { background-color: var(--color-bg); }
 .secao-header { text-align: center; margin-bottom: 56px; }
 .tag { font-weight: var(--font-w-a); font-size: 14px; color: var(--color-green); display: block; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
 .secao-header h2 { font-size: var(--font-size-h2); color: var(--color-blue); margin-bottom: 12px; }
@@ -113,3 +114,32 @@ img {
 .categoria { font-weight: var(--font-w-a); font-size: 14px; color: var(--color-green); display: block; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
 .cartao-conteudo h3 { font-size: var(--font-size-h3); color: var(--color-blue); margin-bottom: 12px; }
 .link-explorar { font-weight: var(--font-w-a); color: var(--color-blue); cursor: pointer; }
+
+.cartao-depoimento {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background-color: var(--color-white);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.estrelas {
+    font-size: 22px;
+    color: var(--color-green);
+    letter-spacing: 2px;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.autor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
