@@ -1,0 +1,41 @@
+@import url("reset.css");
+
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #1a1a1a;
+    --color-blue: #0056B3;
+    --color-dark-blue: #003d80;
+    --color-green: #00A650;
+    --color-border: #e0e0e0;
+    --color-bg: #f4f7fb;
+    --color-text: #333333;
+    --color-text-muted: #555555;
+    --font-body: "Inter", sans-serif;
+    --font-title: "Roboto", sans-serif;
+    --font-size-p: 16px;
+    --font-size-h1: 54px;
+    --font-size-h2: 44px;
+    --font-size-h3: 26px;
+    --font-w-p: 400;
+    --font-w-a: 600;
+    --font-w-h: 700;
+}
+
+body {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--font-size-p);
+    font-weight: var(--font-w-p);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-title);
+    font-weight: var(--font-w-h);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
