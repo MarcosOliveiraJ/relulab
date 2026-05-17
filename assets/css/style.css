@@ -39,3 +39,77 @@ img {
     max-width: 100%;
     display: block;
 }
+
+.nav-bar {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    padding: 0 64px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-white);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img { width: 80px; height: 40px; }
+.links-navegacao { display: flex; gap: 32px; }
+.links-navegacao a { font-size: var(--font-size-p); font-weight: var(--font-w-a); color: var(--color-black); }
+.btns-navegacao { display: flex; gap: 16px; }
+
+.btn {
+    padding: 10px 24px;
+    font-size: var(--font-size-p);
+    font-weight: var(--font-w-a);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-solido { background-color: var(--color-blue); color: var(--color-white); }
+.btn-contorno { color: var(--color-blue); border: 1px solid var(--color-blue); }
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 80px 64px;
+    background-color: var(--color-bg);
+    gap: 64px;
+}
+
+.hero-texto { flex: 1; }
+.hero-texto h1 { font-size: var(--font-size-h1); line-height: 1.1; margin-bottom: 24px; color: var(--color-black); }
+.hero-texto h1 span { color: var(--color-blue); }
+.hero-texto p { font-size: 18px; margin-bottom: 36px; max-width: 520px; }
+
+.secao { padding: 80px 64px; }
+.secao-header { text-align: center; margin-bottom: 56px; }
+.tag { font-weight: var(--font-w-a); font-size: 14px; color: var(--color-green); display: block; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+.secao-header h2 { font-size: var(--font-size-h2); color: var(--color-blue); margin-bottom: 12px; }
+
+.grade-cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.cartao {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+
+.cartao > img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.cartao-conteudo { padding: 32px; }
+.categoria { font-weight: var(--font-w-a); font-size: 14px; color: var(--color-green); display: block; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.cartao-conteudo h3 { font-size: var(--font-size-h3); color: var(--color-blue); margin-bottom: 12px; }
+.link-explorar { font-weight: var(--font-w-a); color: var(--color-blue); cursor: pointer; }
